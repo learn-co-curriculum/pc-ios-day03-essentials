@@ -1,1 +1,7 @@
-# pc-ios-day03-essentials
+# Essentials!
+
+##Arrays
+
+##Dictionaries
+
+##Random Function
