@@ -1,9 +1,7 @@
 # Essentials!
 
 ##Arrays
-Arrays are one type of list that can be used to group and organize multiple pieces of data.  
-
-+ Array == an ordered list that can be visualized as a two-column table. Left column is the index and the right column is the thing you're listing (Draw on board, using bucket list as an example):
+Arrays are one type of list that can be used to group and organize multiple pieces of data.  You can ordered list that can be visualized as a two-column table. Left column is the index and the right column is the thing you're listing.  For example, imagine a bucket list:
 
 | Index | Bucket List Item |
 | --- | --- |
@@ -13,27 +11,21 @@ Arrays are one type of list that can be used to group and organize multiple piec
 
 + Notice that the index starts at 0. This is a quirk about data structures in computer science that you just have to memorize.
 + So how do we translate this table into code in Swift?
-  + var name_array = `["Danny", "Lyel", "Victoria", "Vanessa"]`
-  + Remember that the names are data so must be in quotes as strings.
-
+  + var bucket_list = `["Go sky diving", "Visit Antartica", "Climb Mt. Everest"]`
 
 ACCESSING ITEMS IN AN ARRAY
 + We access items in an array using the brackets and the index of the thing you want.
-  + `names[3]` will give me what? (the fourth item). how do I get the third item?
+If we want to get to the second element in 'bucket_list' we can say
+`bucket_list[1]`
   + 
 ASSIGNING ITEMS
 + So what if we want to change one of the items in the array?
-`names[2] = "Joe"` will re-assign the third item in the array to Joe.
+`bucket_list[2] = "take a nap"` will re-assign the third item in the array to 'take a nap'.
 
 ADD AND REMOVE ITEMS
 + We can also add and remove items from an array.
-+ `names.push("Alfred")` will add an item with the contents of the argument to the end of the array it is called on. You can also use `<<` like so: `names << "Alfred"`.
-+ `names.pop` will remove the last item in an array.
-+ `names.delete_at(3)` will delete the item at index 3.
-+ `names.insert(2, "Dan")` will insert the item at the index you specify in the first argument.
-+ Here are some other cool methods: .length, .reverse, .sample, .sort
-+ [Mini-Lab: Manipulating arrays](https://GitHub.com/learn-co-curriculum/hs-manipulating-arrays-mini-lab) (start with array and then have 10 instructions, what does array look like at the end?)
-  + Answer: `["Peru", "Laos", "Chad", "Cuba", "Togo", "Iraq", "Iran", "Mali", "Oman", "Fiji"]`
++ `bucket_list.append("graduate from Flatiron")` will add an item with the contents of the argument to the end of the array it is called on. 
++ `bucket_list.removeAtIndex[1]` will delete the item at index 1.
 
 ##Dictionaries
 + Hashes give context to data (a bunch of ages without names to associate them with mean nothing), it's an additional data dimension. 
