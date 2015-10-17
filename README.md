@@ -1,7 +1,7 @@
 # Essentials!
 
 ##Arrays
-Arrays are one type of list that can be used to group and organize multiple pieces of data.  You can ordered list that can be visualized as a two-column table. Left column is the index and the right column is the thing you're listing.  For example, imagine a bucket list:
+Arrays are a type of list that can be used to group and organize multiple pieces of data.  You can ordered list that can be visualized as a two-column table. Left column is the index and the right column is the thing you're listing.  For example, imagine a bucket list:
 
 | Index | Bucket List Item |
 | --- | --- |
@@ -13,16 +13,16 @@ Arrays are one type of list that can be used to group and organize multiple piec
 + So how do we translate this table into code in Swift?
   + var bucket_list = `["Go sky diving", "Visit Antartica", "Climb Mt. Everest"]`
 
-ACCESSING ITEMS IN AN ARRAY
+**Accessing an item in an array**
 + We access items in an array using the brackets and the index of the thing you want.
 If we want to get to the second element in 'bucket_list' we can say
 `bucket_list[1]`
   + 
-ASSIGNING ITEMS
+*Assigning items**
 + So what if we want to change one of the items in the array?
 `bucket_list[2] = "take a nap"` will re-assign the third item in the array to 'take a nap'.
 
-ADD AND REMOVE ITEMS
+**adding and removing items**
 + We can also add and remove items from an array.
 + `bucket_list.append("graduate from Flatiron")` will add an item with the contents of the argument to the end of the array it is called on. 
 + `bucket_list.removeAtIndex[1]` will delete the item at index 1.
@@ -47,34 +47,15 @@ Dictionaries are also a type of list and can be thought of as two-column tables.
 | 2 | "Vanessa" |
 
 + We use ditionaries when we have a piece of data tied to another piece of data. We call this a key-value pair. The key in a dictionary has to be unique, because it's how we access values from the hash. 
-+ We write a dictionary like this: `names_hash = { "Danny" => "December 3", "Victoria" => "December 2" }`
++ We write a dictionary like this: `names_dict = { "Danny" => "December 3", "Victoria" => "December 2" }`
 
-ACCESSING DATA IN A DICTIONARY
+**accessing data in a dictionary**
 + Now we don't have indices, but we have keys. Given what we know about arrays, how do you think we'd access a value from a dictionary?
   + `names_dict["Danny"]` returns `"December 3"`
 + Knowing what we know about arrays, how would we change a key-value pair's value?
   + `names_dict["Victoria"] = "December 1"`
 + To add a new key-value pair we use the same syntax:
   + `names_dict["Lyel"] = "April 1st"`
-+ To delete we use `names_dict.delete("Lyel")` to remove the pair.
++ To delete we use `names_dict.removeAtKey("Lyel")` to remove the pair.
 
 
-NESTED DATA STRUCTURES *This material is bonus - think of it as nice-to-have*
-+ Hashes and Arrays can occur inside of other hashes and arrays. How do we pull individual items out if this is the case?
-```ruby
-salad_ingredients = [
-      ["romaine", "kale", "spring mix"],
-      ["tomatoes", "avocado", "beets"],
-      ["vinaigrette", "ranch", "ginger-soy"]
-    ]
-```
-This data would be much better represented as a hash (explain why). Can you help me convert it?
-```ruby
-salad_ingredients ={ 
-  :lettuce => ["romaine", "kale", "spring mix"],
-  :veggie => ["tomatoes", "avocado", "beets"],
-  :dressing => ["vinagrette", "ranch", "ginger-soy"] 
-}
-```
-
-##Random Function
