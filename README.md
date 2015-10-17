@@ -12,16 +12,12 @@ Arrays are one type of list that can be used to group and organize multiple piec
 | 2 | Climb Mt. Everest |
 
 + Notice that the index starts at 0. This is a quirk about data structures in computer science that you just have to memorize.
-+ So how do we translate this table into code?
-  + `["Danny", "Lyel", "Victoria", "Vanessa"]`
++ So how do we translate this table into code in Swift?
+  + var name_array = `["Danny", "Lyel", "Victoria", "Vanessa"]`
   + Remember that the names are data so must be in quotes as strings.
-  + We use square brackets to denote an array.
-  + We don't explicitly write the index anywhere. (show the index above each item on the board)
-+ Assign the array to a variable so that when we call the variable name, we have the array returned to us.
-+ Have students create their own bucket list array of their choice and assign it to a variable.
+
 
 ACCESSING ITEMS IN AN ARRAY
-+ What if I want to get the third item listed in my array?
 + We access items in an array using the brackets and the index of the thing you want.
   + `names[3]` will give me what? (the fourth item). how do I get the third item?
   + 
@@ -40,8 +36,7 @@ ADD AND REMOVE ITEMS
   + Answer: `["Peru", "Laos", "Chad", "Cuba", "Togo", "Iraq", "Iran", "Mali", "Oman", "Fiji"]`
 
 ##Dictionaries
-+ Hashes are the second data structure we're going to talk about. 
-+ Hashes give context to data (a bunch of ages without names to associate them with mean nothing), it's a additional data dimension. 
++ Hashes give context to data (a bunch of ages without names to associate them with mean nothing), it's an additional data dimension. 
 + They are like two column tables. The difference is that for an array the left side of the column is the index, for hashes there is no numbered index, but there is another piece of data on the left side of the table, called the **key**.
 
 ####Hash
@@ -71,21 +66,7 @@ ACCESSING DATA IN A HASH
 + To add a new key-value pair we use the same syntax:
   + `names_hash["Lyel"] = "April 1st"`
 + To delete we use `names_hash.delete("Lyel")` to remove the pair.
-+ Sometimes we use a data type called a symbol for the key in a hash. Symbols are unique, which means that they can only exist once in Ruby code, which is convenient because keys in a hash are unique. (CS - one to one/many relationships?) A symbol is made up of a colon (:) and a set of characters. Let's create a new hash, but use symbols instead of strings for the keys.
-+ Hash methods to look at: .values, .keys, .length, .include?
 
-ITERATING THROUGH HASHES
-+ Let's learn about iteration in hashes, just like we did for arrays. For arrays we only wanted to loop through and do something to the value, but since a hash has a pair of data, we can use them both with `.each`. Say I want to print a string for each key-value pair that reads: `"#{name} has a birthday on #{birth_date}`.  We do this with the `.each` method: 
-
-######OPTIONAL:  Allow students at this point to write out the .each method on their whiteboards.
-
-```ruby
-names_hash.each do |key, value|
-    puts "#{key} has a birthday on #{value}.
-  end
-```
-+ We can replace the key and value placeholders with anything we want, these are just placeholders. Just remember that the first one is for the key and the second is always representing the value.
-+ [Iteration with hashes Mini-Lab](https://GitHub.com/learn-co-curriculum/hs-hash-iteration-mini-lab)
 
 NESTED DATA STRUCTURES *This material is bonus - think of it as nice-to-have*
 + Hashes and Arrays can occur inside of other hashes and arrays. How do we pull individual items out if this is the case?
