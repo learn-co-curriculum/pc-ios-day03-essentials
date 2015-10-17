@@ -17,8 +17,8 @@ Arrays are a type of list that can be used to group and organize multiple pieces
 + We access items in an array using the brackets and the index of the thing you want.
 If we want to get to the second element in 'bucket_list' we can say
 `bucket_list[1]`
-  + 
-*Assigning items**
+   
+**Assigning items**
 + So what if we want to change one of the items in the array?
 `bucket_list[2] = "take a nap"` will re-assign the third item in the array to 'take a nap'.
 
