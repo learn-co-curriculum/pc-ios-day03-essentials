@@ -28,7 +28,7 @@ If we want to get to the second element in 'bucket_list' we can say
 + `bucket_list.removeAtIndex[1]` will delete the item at index 1.
 
 ##Dictionaries
-Dictionaries are also a type of list and can be thought of as two-column tables. The difference is that for an array the left side of the column is the index, for dictionaries there is no numbered index, but there is another piece of data on the left side of the table, called the **key**.
+Dictionaries are also a type of list and can be thought of as two-column tables. The difference is that for an array the left side of the column is the index, for dictionaries there is no numbered index, but there is another piece of data on the left side of the table, called the **key**, while the data on the right are called **values**
 
 ####Dictionaries
 
@@ -46,10 +46,12 @@ Dictionaries are also a type of list and can be thought of as two-column tables.
 | 1 | "Victoria" |
 | 2 | "Vanessa" |
 
-+ We use ditionaries when we have a piece of data tied to another piece of data. We call this a key-value pair. The key in a dictionary has to be unique, because it's how we access values from the hash. 
-+ We write a dictionary like this: `names_dict = { "Danny" => "December 3", "Victoria" => "December 2" }`
+We use ditionaries when we have a piece of data tied to another piece of data. We call this a key-value pair. The key in a dictionary has to be unique, because it's how we access values from the hash. 
 
-**accessing data in a dictionary**
+We initialize a dictionary like this: `var names_dict = [String: String]()`
+We write a dictionary like this: `names_dict = [ "Danny": "December 3", "Victoria": "December 2" ]`
+
+**Accessing data in a dictionary**
 + Now we don't have indices, but we have keys. Given what we know about arrays, how do you think we'd access a value from a dictionary?
   + `names_dict["Danny"]` returns `"December 3"`
 + Knowing what we know about arrays, how would we change a key-value pair's value?
