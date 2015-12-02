@@ -61,3 +61,5 @@ We write a dictionary like this: `names_dict = [ "Danny": "December 3", "Victori
 + To delete we use `names_dict.removeAtKey("Lyel")` to remove the pair.
 
 
+
+<a href='https://learn.co/lessons/pc-ios-day03-essentials' data-visibility='hidden'>View this lesson on Learn.co</a>
