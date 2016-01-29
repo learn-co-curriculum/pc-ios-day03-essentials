@@ -62,4 +62,4 @@ We write a dictionary like this: `names_dict = [ "Danny": "December 3", "Victori
 
 
 
-<a href='https://learn.co/lessons/pc-ios-day03-essentials' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/pc-ios-day03-essentials' title='Essentials!'>Essentials!</a> on Learn.co and start learning to code for free.</p>
